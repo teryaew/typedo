@@ -6,22 +6,37 @@ Webfonts preparing tool on Node.js
 $ [sudo] npm install -g typedo
 ```
 
+## Input file types
+
+TTF, OTF, FON
+
+## Output file types
+
+WOFF, WOFF2, CSS
+
+## Required system packages
+
+* [fontforge](http://fontforge.github.io)
+
+```
+brew install fontforge --with-x11
 ```
 
-Input file types:
-  TTF, OTF, FON
+* [ttfautohint](http://www.freetype.org/ttfautohint/doc/ttfautohint.html#compilation-and-installation) (optional)
 
-Output file types:
-  WOFF, WOFF2, CSS
+```
+brew install ttfautohint --with-qt
+```
 
-Required system packages:
-  brew install fontforge --with-x11
-  brew install ttfautohint --with-qt
-  brew install bramstein/webfonttools/woff2
-  [fontforge](http://fontforge.github.io/)
-  [ttfautohint](http://www.freetype.org/ttfautohint/doc/ttfautohint.html#compilation-and-installation) (optional)
-  [woff2](https://github.com/google/woff2) (optional)
+* [woff2](https://github.com/google/woff2) (optional)
 
+```
+brew install bramstein/webfonttools/woff2
+```
+
+## Usage
+
+```
 Usage:
   typedo [SUBCOMMAND] [OPTIONS] [ARGS]
 
@@ -42,12 +57,14 @@ Arguments:
 
 * with files:
 
-        $ typedo build test.ttf
+```
+$ typedo build test.ttf
+$ typedo build -i test.ttf
+$ typedo build -i test.ttf -o path/to/output/folder
+```
 
-        $ typedo build -i test.ttf
+* with folder:
 
-        $ typedo build -i test.ttf -o path/to/output/folder
-
-* with folder
-
-        $ typedo build -i path/to/input/folder
+```
+$ typedo build -i path/to/input/folder
+```
