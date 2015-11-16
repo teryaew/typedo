@@ -1,0 +1,43 @@
+{
+  "name": "typedo",
+  "description": "Webfonts preparing tool on Node.js",
+  "keywords": [ "typography", "font", "webfont", "woff", "woff2", "bem" ],
+  "author": {
+    "name": "Mitya Teryaew",
+    "email": "mitya.teryaew@gmail.com",
+    "url": "https://github.com/teryaew"
+  },
+  "version": "0.0.1",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/teryaew/typedo.git"
+  },
+  "main": "./lib/build.js",
+  "bin": {
+    "typedo": "./bin/typedo"
+  },
+  "scripts": {
+    "start": "node ./lib/server",
+    "steady": "enb make && node ./bemserver/steady"
+  },
+  "engines": {
+    "node": ">=0.10"
+  },
+  "dependencies": {
+    "adm-zip": "^0.4.7",
+    "bem-naming": "^0.5.1",
+    "chalk": "^0.5.1",
+    "coa": "^1.0.1",
+    "connect": "^3.3.4",
+    "glob": "^4.3.5",
+    "inherit": "^2.2.2",
+    "lodash": "^3.1.0",
+    "mkdirp": "^0.5.0",
+    "progress": "^1.1.8",
+    "qs": "^2.3.3",
+    "sync-exec": "^0.5.0",
+    "temp": "^0.8.1",
+    "winston": "^0.9.0"
+  }
+}

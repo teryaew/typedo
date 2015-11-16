@@ -1,0 +1,40 @@
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
+.idea
+.project
+.keep
+
+
+# Thumbnails
+._*
+
+### Node ###
+node_modules
+npm-debug.log
+
+### SublimeText ###
+# workspace files are user-specific
+*.sublime-workspace
+*.sublime-project
+
+#sftp configuration file
+sftp-config.json
+
+### PhpStorm ###
+### RubyMine ###
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
+
+## Directory-based project format
+.idea/
+.project
+.svn
+.git
+.hg
+
+
+### Project ###
+src
+error.log
+typedo.zip
